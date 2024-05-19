@@ -1,0 +1,657 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(-45deg, black 59%, red 50%);
+    position: absolute;
+    overflow: hidden;
+
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: -29rem;
+    left: -4rem;
+    width: 35%;
+    height: 123%;
+    background-color: red;
+    transform: skew(-46deg);
+    box-shadow: 26px 32px 64px 49px black;
+}
+
+
+/* ................................navbar-end........................... */
+
+::placeholder {
+    color: white;
+    border: none;
+    transition: color 0.3s ease-in-out;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    z-index: 1;
+    position: relative;
+}
+
+.left-nav {
+    display: flex;
+    align-items: center;
+    animation: slideinleft 1s ease-in-out;
+}
+
+
+@keyframes slideinleft {
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.left-nav .logo img {
+    height: 40px;
+    position: relative;
+}
+
+.left-nav form {
+    margin-left: 20px;
+    position: relative;
+    animation: fadein 1s ease-in-out 0.5s backwards;
+}
+
+@keyframes fadein {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.left-nav form input[type="search"] {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 15px 20px 15px 40px;
+    border-radius: 15px;
+    box-shadow: inset 0 0 10px black, 0 5px 10px black;
+    width: 300px;
+    animation: input 1s ease-in-out 0.5s backwards;
+}
+
+
+@keyframes input {
+    0%{
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.left-nav i {
+    font-family: 900;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    pointer-events: none;
+
+}
+
+.left-nav form input[type="search"]:focus {
+    box-shadow: inset 0 0 10px black, 0 5px 10px black;
+    width: 350px;
+}
+
+.right-nav {
+    margin-left: 27rem;
+    font-size: 1.3rem;
+    animation: slideinright 1s ease-in-out;
+    transition: all 1s ease;
+}
+
+@keyframes slideinright {
+    0%{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+.nav-links  li{
+    margin-left: 80px;
+    animation: fadein 1s ease-in-out 0.5s backwards;
+}
+
+.nav-links li:nth-child(1) {
+    animation-delay: 0.5s;
+}
+
+.nav-links li:nth-child(2) {
+    animation-delay: 0.9s;
+}
+
+.nav-links li:nth-child(3) {
+    animation-delay: 1.0s;
+}
+
+.nav-links li:nth-child(4) {
+    animation-delay: 1.1s;
+}
+
+.nav-links li:nth-child(5) {
+    animation-delay: 1.3s;
+}
+
+.nav-links  a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    transition: text-shadow 0.3s ease;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.right-nav .profile-link img {
+    height: 30px;
+    border-radius: 50%;
+}
+
+.nav-links a:hover::after{
+    transform: scaleX(1);
+}
+
+.nav-links a:hover{
+    text-shadow: 0 0 10px black;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+}
+
+/* ................................navbar-end........................... */
+
+/* ................................main-image........................... */
+
+.img img{
+    width: 566px;
+    transform: rotate(-41deg);
+    position: absolute;
+    left: 11rem;
+    top: 6rem;
+    z-index: 1;
+    animation: fadein 1s ease-in-out 0.5s backwards;
+}
+
+
+/* ................................square-end........................... */
+.square-conatiner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    margin: 0 auto;
+    position: absolute;
+    left: 39rem;
+    top: 7rem;
+    transform: rotate(45deg);
+    z-index: 2;
+}
+
+.square{
+    width: 5px;
+    margin: 10px;
+    box-shadow: 0 2px 5px black;
+    animation: lineanimation 1s ease-in-out infinite alternate;
+}
+
+
+@keyframes lineanimation {
+    0%{
+        transform: scaleY(1);
+    }
+
+    100%{
+        transform: scaleY(1.2);
+    }
+}
+
+
+.red{
+    background-color: red;
+    
+}
+
+.white{
+    background-color: white;
+    border: 1px solid black;
+
+}
+
+.square-conatiner .square.red:nth-child(1){
+    height: 10rem;
+    animation-delay: 0s;
+}
+
+.square-conatiner .square.red:nth-child(3){
+    height: 15rem;
+    animation-delay: 0.2s;
+}
+
+.square-conatiner .square.red:nth-child(5){
+    height: 20rem;
+    animation-delay: 0.4s;
+}
+
+.square-conatiner .square.white:nth-child(2){
+    height: 22rem;
+    animation-delay: 0.1s;
+}
+
+.square-conatiner .square.white:nth-child(4){
+    height: 10rem;
+    animation-delay: 0.3s;
+}
+
+.square-conatiner .square.white:nth-child(6){
+    height: 17rem;
+    animation-delay: 0.5s;
+}
+
+/* ................................end........................... */
+
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 44px;
+    left: 27rem;
+}
+
+.slider a{
+    display: inline-block;
+    transition: background-color 0.3s ease, text-decoration 0.3s ease;
+    padding: 12px;
+    border-radius: 14px;
+    background-color: white;
+    margin-left: 10px;
+    transition: all ease 1s;
+}
+
+.slider img {
+    width: 99px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.slider a:hover {
+    box-shadow: 0 0 10px red;
+    text-decoration: underline;
+    transform: scale(1.2);
+}
+
+/* ................................slider........................... */
+.social {
+    position: absolute;
+    left: 1rem;
+    bottom: 38rem;
+    display: flex;
+    transform: rotate(-44deg);
+    background-color: black;
+    border-radius: 18px;
+    box-shadow: 0 0 10px black;
+}
+
+.social li {
+    list-style: none;
+    font-size: 2rem;
+    margin: 10px;
+    color: red;
+    animation: fadeindown 1s ease-in-out backwards;
+}
+
+@keyframes fadeindown {
+    0%{
+        opacity: 0;
+        transform: translateY(-50px);
+    
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.social li:nth-child(1){
+    animation-delay: 1s;
+}
+
+.social li:nth-child(2){
+    animation-delay: 1.2s;
+}
+
+.social li:nth-child(3){
+    animation-delay: 1.3s;
+}
+
+.social li:nth-child(4){
+    animation-delay: 1.4s;
+}
+
+.social li:nth-child(5){
+    animation-delay: 1.5s;
+}
+
+.social li:nth-child(6){
+    animation-delay: 1.6s;
+}
+
+.social li i {
+    transition: all 0.5s ease;
+}
+
+
+.social li i:hover {
+    color: rgb(255, 0, 0);
+}
+
+/* ................................end........................... */
+
+.air {
+    position: absolute;
+    right: 0;
+    bottom: 23rem;
+    color: white;
+    width: 39%;
+}
+
+.nike {
+    margin-bottom: 18px;
+}
+
+
+.air p {
+    width: 73%;
+}
+
+.nike h1 {
+    font-size: 5rem;
+    text-shadow: 14px 1px 4px red;
+}
+
+.animated-text {
+    opacity: 0;
+    animation: fadein 1s ease-in-out 0.5s forwards;
+}
+
+.delay-1{
+    animation-delay: 0.5s;
+}
+
+.delay-2{
+    animation-delay: 1s;
+}
+
+.delay-3{
+    animation-delay: 1.5s;
+}
+
+.delay-4{
+    animation-delay: 2s;
+}
+
+.delay-5{
+    animation-delay: 2.5s;
+}
+
+.delay-6{
+    animation-delay: 3s;
+}
+
+.delay-7{
+    animation-delay: 3.5s;
+}
+
+.delay-8{
+    animation-delay: 4s;
+}
+
+.air li {
+    float: left;
+    position: relative;
+    top: 10rem;
+    list-style: none;
+    margin-left: 53px;
+    left: -4rem;
+    border: 2px solid red;
+    padding: 20px;
+    border-radius: 49px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    opacity: 0;
+    animation: fadein 1s ease-in-out 0.5s forwards;
+    
+}
+
+.air li:nth-child(1){
+    animation-delay: 2s;
+}
+
+.air li:nth-child(2){
+    animation-delay: 2.5s;
+}
+
+.air li:nth-child(3){
+    animation-delay: 3s;
+}
+
+.air li:nth-child(4){
+    animation-delay: 3.5s;
+}
+
+.air li:hover {
+    color: red;
+    border-color: white;
+}
+
+.img img {
+    max-width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.sp {
+    position: absolute;
+    left: 0rem;
+    top: 22rem;
+    font: size 4rem;
+    font-weight: bold;
+    opacity: 0;
+    animation: fadein 1s ease-in-out 0.5s forwards;
+    
+    animation-delay: 1.5s;
+}
+
+.air img {
+    width: 91px;
+    position: absolute;
+    bottom: -18.3rem;
+    border: 2px solid red;
+    padding: 16px;
+    border-radius: 86px;
+    opacity: 0;
+    animation: fadein 1s ease-in-out 0.5s forwards;
+    
+    animation-delay: 4.5s;
+}
+
+.counter {
+    color: white;
+    border-radius: 83px;
+    border: 2px solid red;
+    position: absolute;
+    bottom: -12rem;
+    right: 1rem;
+    background-color: red;
+    width: 8%;
+    height: 5vh;
+    text-align: center;
+    font-size: 2.1rem;
+    font-weight: bold;
+    opacity: 0;
+    animation: fadein 1s ease-in-out 0.5s forwards;
+    animation-delay: 5s;
+}
+
+button {
+    position: absolute;
+    padding: 25px;
+    bottom: -18rem;
+    left: 0;
+    border-radius: 99px;
+    width: 397px;
+    transition: all 1s ease;
+    color: white;
+    font-size: 1.5rem;
+    background-color: red;
+    border: none;
+    opacity: 0;
+    animation: fadein 1s ease-in-out 0.5s forwards;
+    animation-delay: 1s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px red;
+    background-color: transparent;
+}
+/* ................................air-end........................... */
+
+
+/* ........................................Reiviews................................................. */
+.reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+.one {
+    width: 62px;
+    height: 60px;
+    margin: 15px;
+    padding: 15px;
+    border:  1px solid rgb(204, 204, 204);
+    border-radius: 10px;
+    box-shadow: rgb(0, 0, 0, 0.1) 0px 2px 5px;
+    text-align: center;
+    transition: all 0.3s ease-in-out 0s;
+    overflow: hidden;
+}
+
+.one img {
+    max-width: 25%;
+    max-height: 115px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    position: absolute;
+    bottom: 5rem;
+}
+
+.one span {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0, 0.2);
+    display: block;
+    margin-bottom: 10px;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.list li {
+    list-style: none;
+    color: #ffc107;
+    margin: 0 3px;
+    font-size: 18px;
+    width: 15%;
+    margin-left: 1px;
+}
+
+.plus {
+    display: inline-block;
+    margin-top: 15px;
+    color: #333;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    0%{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nike Shoes</title>
+  <link rel="icon" href="img/Footballer-logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <!-- ......................................navber............................ -->
+    <nav>
+      <div class="left-nav">
+        <a href="" class="logo"><img src="img/Footballer-logo.png" alt=""></a>
+        <form action="">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="search" placeholder="search....">
+        </form>
+      </div>
+
+      <div class="right-nav">
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Brands</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Cart</a></li>
+          <li><a href="#" class="profile-link"><img src="img/my-pic.jpg" alt=""></a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- ..................................navber-end............................. -->
+
+    <div class="img">
+      <img src="img/7.png" alt="" id="mainImage">
+    </div>
+
+    <!-- /* ................................main-image........................... */ -->
+
+    <div class="square-conatiner">
+      <div class="square red"></div>
+      <div class="square white"></div>
+      <div class="square red"></div>
+      <div class="square white"></div>
+      <div class="square red"></div>
+      <div class="square white"></div>
+    </div>
+    <!-- /* ................................square-end........................... */ -->
+
+    <div class="slider">
+      <a href="#"><img src="img/7.png" alt="" onclick="changeImage('img/7.png', this)"></a>
+      <a href="#"><img src="img/5.png" alt="" onclick="changeImage('img/5.png', this)"></a>
+      <a href="#"><img src="img/2.png" alt="" onclick="changeImage('img/2.png', this)"></a>
+    </div>
+    <!-- /* ................................-end........................... */ -->
+
+
+    <div class="social">
+      <li><a href="https://www.instagram.com/mtalha.asif.7/"><i class="fa-brands fa-instagram"></i></li></a>
+      <li><a href="https://www.facebook.com/mtalha.asif.7"><i class="fa-brands fa-facebook"></i></li></a>
+      <li><a href="http://youtube.com/@Techify786"><i class="fa-brands fa-youtube"></i></li></a>
+      <li><a href="https://twitter.com/talhaasifmf786"><i class="fa-brands fa-twitter"></i></li></a>
+      <li><a href="https://www.linkedin.com/in/talha-soomro-654234274/"><i class="fa-brands fa-linkedin"></i></li></a>
+      <li><a href="https://github.com/Talha836902"><i class="fa-brands fa-github"></i></li></a>
+    </div>
+    <!-- ....................................end..................................... -->
+
+
+    <div class="air">
+      <div class="nike">
+        <h1 class="animated-text ">AIR JORDAN</h1>
+        <span class="animated-text delay-1">NIKE</span>
+      </div>
+      <p class="animated-text delay-2">Jordan, officially known as the Hashemite Kingdom of Jordan, is a country rich in
+        history, culture, and natural
+        beauty. Located in the heart of the Middle East, Jordan is bordered by Saudi Arabia to the south and east, Iraq
+        to the northeast, Syria to the north, and Israel and the West Bank to the west. The country's strategic location
+        has made it a crossroads of civilizations for millennia, resulting in a diverse cultural tapestry that
+        fascinates visitors from around the world.
+        at iconic structures like the Treasury and the Monastery, which date back to the Nabatean kingdom around 300
+        BCE.</p>
+
+
+      <span class="sp animated-text  delay-3">$320</span>
+
+      <li onclick="changeImageSize(10)" class="animated-text delay-4">10</li>
+      <li onclick="changeImageSize(11)" class="animated-text delay-5">11</li>
+      <li onclick="changeImageSize(12)" class="animated-text delay-6">12</li>
+      <li onclick="changeImageSize(15)" class="animated-text delay-7">15</li>
+
+
+      <span class="counter">0</span>
+      <button class="animated-text  delay-8" onclick="increasecounter()">ADD to CART</button>
+
+      <img src="img/4.png" alt="">
+
+    </div>
+
+
+    <!-- ...........................................air............................ -->
+
+
+
+
+
+    <!-- ........................................reiviews................................................. -->
+    <div class="reviews">
+      <div class="one">
+        <img src="img/customer-1.png" alt="">
+        <span>nice shoes</span>
+        <div class="list">
+          <li><i class="fa-solid fa-star"></i></li>
+          <li><i class="fa-solid fa-star"></i></li>
+          <li><i class="fa-solid fa-star"></i></li>
+          <li><i class="fa-solid fa-star"></i></li>
+          <li><i class="fa-regular fa-star"></i></li>
+        </div>
+        <a href="" class="plus"><i class="fa-solid fa-plus"></i></a>
+      </div>
+      <div class="one">
+        <img src="img/customer-2.png" alt="">
+        <span>i like this shoes</span>
+        <div class="list">
+          <li><i class="fa-solid fa-star"></i></li>
+          <li><i class="fa-solid fa-star"></i></li>
+          <li><i class="fa-solid fa-star"></i></li>
+          <li><i class="fa-regular fa-star"></i></li>
+          <li><i class="fa-regular fa-star"></i></li>
+        </div>
+        <a href="" class="plus"><i class="fa-solid fa-plus"></i></a>
+      </div>
+      <div class="one">
+        <img src="img/customer-3.png" alt="">
+        <span>beautiful designs</span>
+        <div class="list">
+          <li><i class="fa-solid fa-star"></i></li>
+          <li><i class="fa-solid fa-star"></i></li>
+          <li><i class="fa-regular fa-star"></i></li>
+          <li><i class="fa-regular fa-star"></i></li>
+          <li><i class="fa-regular fa-star"></i></li>
+        </div>
+        <a href="" class="plus"><i class="fa-solid fa-plus"></i></a>
+      </div>
+    </div>
+
+  </header>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
